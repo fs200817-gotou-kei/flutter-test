@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:validate_app/estimate_result.dart';
 
 class TextFieldValidate extends StatefulWidget {
   const TextFieldValidate({super.key});
@@ -42,6 +43,9 @@ class _TextFieldValidateState extends State<TextFieldValidate> {
                 ),
               ),
             ),
+            Container(
+              child: EstimateResult(),
+            )
           ],
         ));
   }
